@@ -1,0 +1,261 @@
+@import "tailwindcss";
+
+/* Brand tokens, carried over from the prototype. The site has one committed
+   look, so there is deliberately no dark theme. */
+@theme inline {
+  --color-navy: #0b192c;
+  --color-charcoal: #1e242b;
+  --color-gold: #c5a059;
+  --color-paper: #ffffff;
+  --color-mist: #f4f5f7;
+  --color-slate: #5b6573;
+  --color-rule: #e3e5e8;
+  --color-error: #a12a2a;
+
+  --font-serif: var(--font-newsreader), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-jost), "Helvetica Neue", Arial, sans-serif;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    /* Keeps anchored sections clear of the sticky masthead. */
+    scroll-padding-top: calc(88px + env(safe-area-inset-top, 0px));
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-charcoal);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Fills the notch area so the masthead reads as edge to edge. */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0 0 auto;
+    height: env(safe-area-inset-top, 0px);
+    z-index: 60;
+    background: var(--color-navy);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-serif);
+    text-wrap: balance;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+
+@layer components {
+  .gutter {
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  @media (min-width: 768px) {
+    .gutter {
+      padding-left: max(40px, env(safe-area-inset-left, 0px));
+      padding-right: max(40px, env(safe-area-inset-right, 0px));
+    }
+  }
+
+  .wrap {
+    max-width: 1180px;
+    margin-inline: auto;
+  }
+
+  .measure {
+    max-width: 62ch;
+  }
+
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .masthead {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index: 50;
+    background: var(--color-navy);
+    border-bottom: 1px solid rgb(197 160 89 / 0.28);
+  }
+
+  .navlink {
+    color: rgb(255 255 255 / 0.78);
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    transition: color 0.2s;
+  }
+  .navlink:hover,
+  .navlink[aria-current="page"] {
+    color: var(--color-paper);
+  }
+  .navlink[aria-current="page"] {
+    box-shadow: inset 0 -1px 0 var(--color-gold);
+  }
+
+  .btn-gold {
+    display: inline-block;
+    background: var(--color-gold);
+    color: var(--color-navy);
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    transition: background 0.2s;
+  }
+  .btn-gold:hover {
+    background: #d3b072;
+  }
+
+  .btn-line {
+    display: inline-block;
+    border: 1px solid rgb(255 255 255 / 0.4);
+    color: var(--color-paper);
+    letter-spacing: 0.06em;
+    transition: border-color 0.2s;
+  }
+  .btn-line:hover {
+    border-color: var(--color-gold);
+  }
+
+  .btn-navy {
+    display: inline-block;
+    background: var(--color-navy);
+    color: var(--color-paper);
+    letter-spacing: 0.06em;
+    transition: opacity 0.2s;
+  }
+  .btn-navy:disabled {
+    opacity: 0.6;
+    cursor: wait;
+  }
+
+  .lang a {
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    padding: 6px 10px;
+    color: rgb(255 255 255 / 0.6);
+  }
+  .lang a[aria-current="true"] {
+    color: var(--color-navy);
+    background: var(--color-gold);
+  }
+
+  .hairline {
+    height: 1px;
+    background: var(--color-gold);
+    width: 48px;
+  }
+
+  .flow-node {
+    border: 1px solid rgb(255 255 255 / 0.22);
+    background: rgb(255 255 255 / 0.03);
+  }
+  .flow-arrow {
+    height: 1px;
+    background: var(--color-gold);
+    position: relative;
+    flex: 1;
+  }
+  .flow-arrow::after {
+    content: "";
+    position: absolute;
+    right: -1px;
+    top: -4px;
+    border-left: 7px solid var(--color-gold);
+    border-top: 4.5px solid transparent;
+    border-bottom: 4.5px solid transparent;
+  }
+
+  .pillar {
+    border-top: 1px solid var(--color-rule);
+  }
+
+  .step-num {
+    font-family: var(--font-serif);
+    color: var(--color-gold);
+    font-variant-numeric: tabular-nums lining-nums;
+  }
+
+  .commit {
+    border-top: 1px solid rgb(197 160 89 / 0.35);
+  }
+
+  .field {
+    display: block;
+    width: 100%;
+    border: 1px solid #aeb4bc;
+    background: var(--color-paper);
+    color: var(--color-charcoal);
+    padding: 12px 14px;
+    font-size: 16px;
+    border-radius: 0;
+  }
+  .field:focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 1px;
+  }
+  .field[aria-invalid="true"] {
+    border-color: var(--color-error);
+  }
+
+  .prose-legal h2 {
+    margin-top: 2.5rem;
+    color: var(--color-navy);
+    font-size: 24px;
+    line-height: 1.25;
+  }
+  .prose-legal p {
+    margin-top: 0.75rem;
+    color: var(--color-slate);
+  }
+  .prose-legal a {
+    color: var(--color-navy);
+    border-bottom: 1px solid var(--color-gold);
+  }
+
+  .fade-in {
+    animation: rise 0.7s ease-out both;
+  }
+  .fade-in.d2 {
+    animation-delay: 0.12s;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .fade-in {
+      animation: none;
+    }
+  }
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(8px);
+    opacity: 0.001;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}

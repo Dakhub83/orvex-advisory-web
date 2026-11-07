@@ -1,0 +1,292 @@
+{
+  "meta": {
+    "siteName": "Orvex & Co. Advisory",
+    "description": "Orvex & Co. Advisory connects refineries, institutional buyers and mining investors with vetted, duly authorized counterparties in Burkina Faso, under a compliance-first, non-custodial framework.",
+    "services": "Services",
+    "compliance": "Compliance",
+    "about": "About",
+    "inquiry": "Inquiry Portal",
+    "privacy": "Privacy Notice",
+    "terms": "Terms of Use"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "compliance": "Compliance",
+    "about": "About",
+    "portal": "Inquiry Portal",
+    "cta": "Submit an Inquiry",
+    "menu": "Menu",
+    "language": "Language",
+    "primary": "Primary",
+    "mobile": "Mobile",
+    "brandHome": "Orvex & Co. Advisory, home",
+    "skip": "Skip to content",
+    "advisory": "Advisory"
+  },
+  "hero": {
+    "eyebrow": "Gold Sourcing & Mining Advisory · Burkina Faso",
+    "h1": "Burkina Faso gold, transacted to institutional standard.",
+    "sub": "Orvex & Co. Advisory connects refineries, institutional buyers and mining investors with vetted, duly authorized counterparties in Burkina Faso — under a compliance-first, non-custodial framework.",
+    "cta1": "Begin Qualification",
+    "cta2": "Review Our Compliance Protocol",
+    "assure": "We never take title to metal or hold client funds. Settlement moves bank-to-bank between buyer and authorized exporter."
+  },
+  "flow": {
+    "title": "Settlement path",
+    "from": "Origin of funds",
+    "buyer": "Buyer's bank",
+    "to": "Beneficiary",
+    "exporter": "Authorized exporter's bank",
+    "direct": "Direct transfer · no intermediary account",
+    "orvex": "Orvex & Co. — coordination only",
+    "orvexSub": "No custody of funds or metal. Our fee is disbursed under the IMFPA at settlement.",
+    "terms": "Delivery",
+    "termsValue": "FOB Ouagadougou · CIF",
+    "assay": "Assay",
+    "assayValue": "Independent, pre-settlement"
+  },
+  "pillars": {
+    "eyebrow": "Our framework",
+    "h2": "A transaction discipline built for a high-scrutiny market.",
+    "intro": "West African gold carries a reputation that serious buyers cannot ignore. Our framework is designed to answer every question a refinery compliance officer will ask — before the first introduction is made.",
+    "p1": {
+      "title": "Compliance Before Introduction",
+      "body": "No seller documentation is released until a counterparty has completed KYC, submitted a Client Information Sheet and provided verifiable proof of funds."
+    },
+    "p2": {
+      "title": "Non-Custodial by Design",
+      "body": "Orvex never takes title to metal and never holds buyer funds. Payment flows directly between the buyer's bank and the authorized exporter's bank."
+    },
+    "p3": {
+      "title": "Global Standards, Local Execution",
+      "body": "Our process is aligned with OECD due diligence guidance and Burkina Faso's Mining Code, and executed on the ground in Ouagadougou by vetted, licensed partners."
+    },
+    "p4": {
+      "title": "Verification at Every Stage",
+      "body": "Export authorizations, permits and assay results are independently verified before settlement, not after."
+    }
+  },
+  "commitments": {
+    "eyebrow": "Standing commitments",
+    "h2": "Commitments we hold on every engagement.",
+    "c1": {
+      "title": "Zero upfront fees",
+      "body": "Buyers are never asked to pay taxes, customs or handling fees before a verified assay."
+    },
+    "c2": {
+      "title": "Bank-to-bank settlement",
+      "body": "Funds move only between the buyer's bank and the licensed exporter's bank."
+    },
+    "c3": {
+      "title": "NCNDA & IMFPA on every deal",
+      "body": "Every introduction is protected by executed non-circumvention and fee-protection agreements."
+    },
+    "c4": {
+      "title": "OECD-aligned due diligence",
+      "body": "Supply-chain risk is assessed against the OECD framework for high-risk areas."
+    },
+    "c5": {
+      "title": "Bilingual documentation",
+      "body": "Every engagement is supported in English and French, the working language in Burkina Faso."
+    }
+  },
+  "stages": {
+    "h2": "Five stages from inquiry to settlement.",
+    "link": "View the full protocol →",
+    "s1": {
+      "title": "Qualification",
+      "body": "Inquiry, KYC and proof of funds.",
+      "detail": "The counterparty submits an inquiry, completes KYC, returns a Client Information Sheet and provides verifiable proof of funds. No seller documentation is released before this stage is complete."
+    },
+    "s2": {
+      "title": "Protection",
+      "body": "NCNDA and IMFPA executed.",
+      "detail": "Non-circumvention and fee-protection agreements are executed, so that every introduction is protected from the outset."
+    },
+    "s3": {
+      "title": "Verification",
+      "body": "Full Corporate Offer and licence checks.",
+      "detail": "The Full Corporate Offer is reviewed, and export authorizations, permits and licences are independently verified."
+    },
+    "s4": {
+      "title": "Assay & Logistics",
+      "body": "Independent assay; FOB or CIF execution.",
+      "detail": "The metal is independently assayed before settlement, and delivery is executed FOB Ouagadougou or CIF. Buyers are never asked to pay taxes, customs or handling fees before a verified assay."
+    },
+    "s5": {
+      "title": "Settlement",
+      "body": "Bank-to-bank payment and fee disbursement.",
+      "detail": "Payment moves directly from the buyer's bank to the authorized exporter's bank, with no intermediary account. Our fee is disbursed under the IMFPA at settlement."
+    }
+  },
+  "cta": {
+    "h2": "Every engagement begins with qualification.",
+    "body": "Submit a confidential inquiry. A member of our team will review your profile and respond with next steps and the required documentation.",
+    "button1": "Submit an Inquiry",
+    "button2": "Contact Us"
+  },
+  "fraud": {
+    "label": "Fraud notice",
+    "body": "Orvex & Co. Advisory will never request advance payment of taxes, duties or fees. Report any such request to"
+  },
+  "footer": {
+    "line": "Gold sourcing and mining advisory, Burkina Faso.",
+    "services": "Services",
+    "s1": "Doré Gold Sourcing",
+    "s2": "Permit & JV Advisory",
+    "firm": "Firm",
+    "contact": "Contact",
+    "legal": "Orvex & Co. Advisory acts solely as an intermediary and facilitator. It does not take title to or possession of any commodity, does not hold client funds and is not a party to any sale. Orvex does not offer, sell or solicit securities and is not a registered broker-dealer. Nothing on this website constitutes an offer to sell or a solicitation to buy any commodity, security or interest.",
+    "copyright": "© 2026 Orvex & Co. Advisory",
+    "privacy": "Privacy Notice",
+    "terms": "Terms of Use"
+  },
+  "servicesPage": {
+    "eyebrow": "Services",
+    "h1": "Two advisory mandates, one compliance-first framework.",
+    "intro": "We work with refineries, institutional buyers and mining investors seeking vetted, duly authorized counterparties in Burkina Faso.",
+    "forLabel": "For",
+    "dore": {
+      "title": "Doré Gold Sourcing",
+      "audience": "Refineries and institutional buyers",
+      "body": "We connect qualified buyers with duly authorized exporters in Burkina Faso, and coordinate the transaction from qualification to settlement.",
+      "b1": "Counterparty qualification before any seller documentation is released",
+      "b2": "Independent assay before settlement",
+      "b3": "Delivery FOB Ouagadougou or CIF",
+      "b4": "Direct bank-to-bank settlement, with no intermediary account"
+    },
+    "permit": {
+      "title": "Permit & JV Advisory",
+      "audience": "Mining investors",
+      "body": "We connect mining investors with vetted, duly authorized counterparties in Burkina Faso, under the same discipline we apply to every transaction.",
+      "b1": "Permits and authorizations independently verified",
+      "b2": "Process aligned with Burkina Faso's Mining Code",
+      "b3": "Local execution in Ouagadougou by vetted, licensed partners",
+      "b4": "Engagements supported in English and French"
+    }
+  },
+  "compliancePage": {
+    "eyebrow": "Compliance",
+    "h1": "Our compliance protocol.",
+    "intro": "Every engagement follows the same five stages, and each stage must be complete before the next begins.",
+    "protocolEyebrow": "The protocol",
+    "requirementsEyebrow": "Before any introduction",
+    "requirementsH2": "What we require from every counterparty.",
+    "r1": "Completed KYC",
+    "r2": "A Client Information Sheet",
+    "r3": "Verifiable proof of funds"
+  },
+  "aboutPage": {
+    "eyebrow": "About",
+    "h1": "An intermediary and facilitator, by design.",
+    "intro": "Orvex & Co. Advisory is a gold sourcing and mining advisory focused on Burkina Faso. We coordinate transactions between vetted, duly authorized counterparties, and we stay outside the flow of metal and funds.",
+    "doesH2": "What we do",
+    "does1": "Connect refineries, institutional buyers and mining investors with vetted, duly authorized counterparties",
+    "does2": "Qualify counterparties before any introduction is made",
+    "does3": "Coordinate verification, assay and logistics through to settlement",
+    "does4": "Support every engagement in English and French",
+    "doesNotH2": "What we do not do",
+    "doesNot1": "Take title to or possession of any commodity",
+    "doesNot2": "Hold client funds",
+    "doesNot3": "Act as a party to any sale",
+    "doesNot4": "Offer, sell or solicit securities",
+    "pathEyebrow": "How funds move",
+    "pathH2": "We coordinate. Banks settle.",
+    "pathBody": "Payment moves directly from the buyer's bank to the authorized exporter's bank. We never sit between them, and our fee is disbursed under the IMFPA at settlement."
+  },
+  "inquiryPage": {
+    "eyebrow": "Inquiry Portal",
+    "h1": "Every engagement begins with qualification.",
+    "intro": "Submit a confidential inquiry. A member of our team will review your profile and respond with next steps and the required documentation.",
+    "nextH2": "What happens next",
+    "next1": "We review your profile.",
+    "next2": "We respond with next steps and the required documentation.",
+    "next3": "Qualification proceeds with KYC, a Client Information Sheet and proof of funds.",
+    "noDocs": "Please do not include KYC documents or bank details in this form. We will tell you how to provide them securely.",
+    "contactH2": "Contact",
+    "contactInquiries": "General inquiries",
+    "contactCompliance": "Compliance and fraud reports"
+  },
+  "form": {
+    "title": "Your inquiry",
+    "requiredNote": "All fields are required unless marked optional.",
+    "optional": "optional",
+    "fullName": "Full name",
+    "organization": "Organization",
+    "role": "Role or title",
+    "email": "Business email",
+    "phone": "Phone",
+    "country": "Country",
+    "counterpartyType": "You are a",
+    "service": "Service of interest",
+    "scope": "Indicative volume or scope",
+    "message": "Your inquiry",
+    "consent": "I agree that Orvex & Co. Advisory may use this information to review and respond to my inquiry, as described in the",
+    "consentLink": "Privacy Notice",
+    "website": "Leave this field empty",
+    "select": "Select…",
+    "types": {
+      "refinery": "Refinery",
+      "institutionalBuyer": "Institutional buyer",
+      "miningInvestor": "Mining investor",
+      "other": "Other"
+    },
+    "services": {
+      "doreSourcing": "Doré Gold Sourcing",
+      "permitJv": "Permit & JV Advisory",
+      "unsure": "Not yet sure"
+    },
+    "submit": "Submit Inquiry",
+    "submitting": "Sending…",
+    "errors": {
+      "summary": "Please review the highlighted fields.",
+      "required": "This field is required.",
+      "email": "Enter a valid email address.",
+      "tooLong": "This entry is too long.",
+      "invalid": "Select one of the options.",
+      "consent": "Your agreement is required to submit this inquiry.",
+      "rateLimited": "Too many submissions. Please try again later or write to us at {email}.",
+      "delivery": "Your inquiry could not be sent. Please try again or write to us at {email}."
+    },
+    "success": {
+      "title": "Thank you. Your inquiry has been received.",
+      "body": "A member of our team will review your profile and respond with next steps and the required documentation.",
+      "again": "Submit another inquiry"
+    }
+  },
+  "privacyPage": {
+    "h1": "Privacy Notice",
+    "intro": "This notice explains how Orvex & Co. Advisory handles the information you submit through this website.",
+    "collectH2": "What we collect",
+    "collect": "When you submit an inquiry, we receive the details you enter in the form: your name, organization, role, contact details, country, the nature of your interest and your message.",
+    "useH2": "How we use it",
+    "use": "We use this information to review your inquiry, respond to you and carry out qualification if the engagement proceeds. We do not sell it.",
+    "shareH2": "Who can see it",
+    "share": "Inquiries reach our team by email, through the service providers that deliver and host our messages and this website. Your information is not shared with any counterparty without your knowledge.",
+    "keepH2": "How long we keep it",
+    "keep": "We keep inquiries for as long as we need them to respond to you, and for as long as our legal and compliance obligations require.",
+    "cookiesH2": "Cookies",
+    "cookies": "This website uses one cookie, which remembers your language preference. It does not use advertising cookies.",
+    "contactH2": "Your questions and requests",
+    "contact": "To ask about, correct or delete your information, write to"
+  },
+  "termsPage": {
+    "h1": "Terms of Use",
+    "intro": "By using this website, you accept the following terms.",
+    "roleH2": "Our role",
+    "role": "Orvex & Co. Advisory acts solely as an intermediary and facilitator. It does not take title to or possession of any commodity, does not hold client funds and is not a party to any sale.",
+    "noOfferH2": "No offer",
+    "noOffer": "Orvex does not offer, sell or solicit securities and is not a registered broker-dealer. Nothing on this website constitutes an offer to sell or a solicitation to buy any commodity, security or interest.",
+    "infoH2": "Information on this website",
+    "info": "This website is provided for general information. Any engagement is governed solely by the agreements executed between the parties.",
+    "fraudH2": "Fraud",
+    "fraud": "Orvex & Co. Advisory will never request advance payment of taxes, duties or fees. Report any such request to"
+  },
+  "notFound": {
+    "eyebrow": "Page not found",
+    "h1": "This page does not exist.",
+    "body": "The page you are looking for may have moved.",
+    "home": "Return home"
+  }
+}

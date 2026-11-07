@@ -1,0 +1,332 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Orvex Home Mockup</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Jost:wght@300;400;500;600&display=swap">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: { navy: '#0B192C', charcoal: '#1E242B', gold: '#C5A059', paper: '#FFFFFF', mist: '#F4F5F7', slate: '#5B6573', rule: '#E3E5E8' },
+        fontFamily: {
+          serif: ['Newsreader', 'Georgia', '"Times New Roman"', 'serif'],
+          sans: ['Jost', '"Helvetica Neue"', 'Arial', 'sans-serif']
+        }
+      }
+    }
+  };
+</script>
+<style>
+  /* Layout: navy masthead and hero, white reading sections, charcoal commitments band, navy close. Single committed look (brand palette), so every colour is set explicitly. */
+  :root {
+    --navy: #0B192C; --charcoal: #1E242B; --white: #FFFFFF; --gold: #C5A059;
+    --mist: #F4F5F7; --slate: #5B6573; --rule: #E3E5E8; --navy-line: rgba(197,160,89,.28);
+    --display: 'Newsreader', Georgia, 'Times New Roman', serif;
+    --body: 'Jost', 'Helvetica Neue', Arial, sans-serif;
+    color-scheme: light;
+  }
+  body { background: var(--white); color: var(--charcoal); font-family: var(--body); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: var(--navy); }
+  .gutter { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  @media (min-width: 768px) { .gutter { padding-left: max(40px, env(safe-area-inset-left, 0px)); padding-right: max(40px, env(safe-area-inset-right, 0px)); } }
+  .wrap { max-width: 1180px; margin-inline: auto; }
+  h1, h2, h3 { font-family: var(--display); text-wrap: balance; font-weight: 400; letter-spacing: -0.01em; }
+  .eyebrow { font-family: var(--body); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; font-weight: 500; }
+  .measure { max-width: 62ch; }
+  .masthead { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: var(--navy); border-bottom: 1px solid var(--navy-line); }
+  .navlink { color: rgba(255,255,255,.78); font-size: 14px; letter-spacing: .04em; transition: color .2s; }
+  .navlink:hover, .navlink[aria-current="page"] { color: var(--white); }
+  .navlink[aria-current="page"] { box-shadow: inset 0 -1px 0 var(--gold); }
+  .btn-gold { background: var(--gold); color: var(--navy); font-weight: 500; letter-spacing: .06em; transition: background .2s; }
+  .btn-gold:hover { background: #D3B072; }
+  .btn-line { border: 1px solid rgba(255,255,255,.4); color: var(--white); letter-spacing: .06em; transition: border-color .2s; }
+  .btn-line:hover { border-color: var(--gold); }
+  .btn-navy { background: var(--navy); color: var(--white); letter-spacing: .06em; }
+  .lang button { font-size: 12px; letter-spacing: .14em; padding: 6px 10px; color: rgba(255,255,255,.6); }
+  .lang button[aria-pressed="true"] { color: var(--navy); background: var(--gold); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+  .hairline { height: 1px; background: var(--gold); width: 48px; }
+  .flow-node { border: 1px solid rgba(255,255,255,.22); background: rgba(255,255,255,.03); }
+  .flow-arrow { height: 1px; background: var(--gold); position: relative; flex: 1; }
+  .flow-arrow::after { content: ""; position: absolute; right: -1px; top: -4px; border-left: 7px solid var(--gold); border-top: 4.5px solid transparent; border-bottom: 4.5px solid transparent; }
+  .pillar { border-top: 1px solid var(--rule); }
+  .step-num { font-family: var(--display); color: var(--gold); font-variant-numeric: tabular-nums lining-nums; }
+  .commit { border-top: 1px solid rgba(197,160,89,.35); }
+  .fade-in { animation: rise .7s ease-out both; }
+  .fade-in.d2 { animation-delay: .12s; } .fade-in.d3 { animation-delay: .24s; }
+  @keyframes rise { from { transform: translateY(8px); opacity: .001; } to { transform: none; opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { .fade-in { animation: none; } }
+  [data-swap] { transition: opacity .18s; }
+  .swapping [data-swap] { opacity: .2; }
+</style>
+
+<header class="masthead">
+  <div class="gutter">
+    <div class="wrap flex items-center justify-between gap-6 h-[72px]">
+      <a href="#top" class="flex items-baseline gap-2 shrink-0" aria-label="Orvex & Co. Advisory, home">
+        <span class="font-serif text-[24px] text-paper tracking-tight">Orvex</span>
+        <span class="font-serif italic text-[18px] text-gold">&amp; Co.</span>
+        <span class="hidden sm:inline eyebrow text-[10px] text-white/50 ml-1">Advisory</span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8" aria-label="Primary">
+        <a class="navlink py-2" href="#top" aria-current="page" data-i18n="nav.home">Home</a>
+        <a class="navlink py-2" href="#services" data-i18n="nav.services">Services</a>
+        <a class="navlink py-2" href="#commitments" data-i18n="nav.compliance">Compliance</a>
+        <a class="navlink py-2" href="#protocol" data-i18n="nav.about">About</a>
+        <a class="navlink py-2" href="#inquiry" data-i18n="nav.portal">Inquiry Portal</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <div class="lang flex border border-white/20" role="group" aria-label="Language">
+          <button type="button" id="lang-en" aria-pressed="true" data-lang="en">EN</button>
+          <button type="button" id="lang-fr" aria-pressed="false" data-lang="fr">FR</button>
+        </div>
+        <a href="#inquiry" class="btn-gold hidden md:inline-block text-[13px] px-5 py-3 uppercase" data-i18n="nav.cta">Submit an Inquiry</a>
+        <button type="button" id="menu-btn" class="lg:hidden text-paper p-2" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menu">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M3 6h16M3 11h16M3 16h16" stroke="#FFFFFF" stroke-width="1.4"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav id="mobile-nav" class="lg:hidden wrap pb-5 flex flex-col gap-1" hidden aria-label="Mobile">
+      <a class="navlink py-2" href="#top" data-i18n="nav.home">Home</a>
+      <a class="navlink py-2" href="#services" data-i18n="nav.services">Services</a>
+      <a class="navlink py-2" href="#commitments" data-i18n="nav.compliance">Compliance</a>
+      <a class="navlink py-2" href="#protocol" data-i18n="nav.about">About</a>
+      <a class="navlink py-2" href="#inquiry" data-i18n="nav.portal">Inquiry Portal</a>
+      <a href="#inquiry" class="btn-gold text-center text-[13px] px-5 py-3 mt-3 uppercase" data-i18n="nav.cta">Submit an Inquiry</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top" data-swap>
+  <!-- HERO -->
+  <section class="bg-navy text-paper gutter relative overflow-hidden">
+    <div class="wrap grid lg:grid-cols-12 gap-12 lg:gap-16 py-16 md:py-24">
+      <div class="lg:col-span-7 min-w-0 fade-in">
+        <p class="eyebrow text-gold flex flex-wrap items-center gap-x-3 gap-y-1">
+          <span data-i18n="hero.eyebrow">Gold Sourcing &amp; Mining Advisory · Burkina Faso</span>
+        </p>
+        <h1 class="mt-6 text-[40px] leading-[1.06] sm:text-[54px] lg:text-[66px] font-light" data-i18n="hero.h1">Burkina Faso gold, transacted to institutional standard.</h1>
+        <p class="mt-7 text-[17px] md:text-[18px] leading-relaxed text-white/75 measure font-light" data-i18n="hero.sub">Orvex &amp; Co. Advisory connects refineries, institutional buyers and mining investors with vetted, duly authorized counterparties in Burkina Faso — under a compliance-first, non-custodial framework.</p>
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="#inquiry" class="btn-gold text-[13px] uppercase px-7 py-4" data-i18n="hero.cta1">Begin Qualification</a>
+          <a href="#protocol" class="btn-line text-[13px] uppercase px-7 py-4" data-i18n="hero.cta2">Review Our Compliance Protocol</a>
+        </div>
+        <p class="mt-8 text-[13px] text-white/55 measure flex gap-3">
+          <span class="hairline mt-[10px] shrink-0" aria-hidden="true"></span>
+          <span data-i18n="hero.assure">We never take title to metal or hold client funds. Settlement moves bank-to-bank between buyer and authorized exporter.</span>
+        </p>
+      </div>
+
+      <!-- Settlement path panel -->
+      <aside class="lg:col-span-5 min-w-0 self-center fade-in d2" aria-labelledby="flow-title">
+        <div class="border border-gold/30 p-6 sm:p-8">
+          <div class="flex items-baseline justify-between gap-4">
+            <p id="flow-title" class="eyebrow text-gold" data-i18n="flow.title">Settlement path</p>
+            <p class="text-[11px] tracking-[.14em] text-white/40 tabular-nums">12.37° N · 1.52° W</p>
+          </div>
+          <div class="mt-8 flex items-center gap-3">
+            <div class="flow-node px-4 py-4 flex-1 min-w-0">
+              <p class="text-[11px] uppercase tracking-[.14em] text-white/45" data-i18n="flow.from">Origin of funds</p>
+              <p class="font-serif text-[19px] mt-1 leading-tight" data-i18n="flow.buyer">Buyer's bank</p>
+            </div>
+            <div class="w-12 sm:w-16 flex items-center" aria-hidden="true"><span class="flow-arrow"></span></div>
+            <div class="flow-node px-4 py-4 flex-1 min-w-0" style="border-color: rgba(197,160,89,.6)">
+              <p class="text-[11px] uppercase tracking-[.14em] text-white/45" data-i18n="flow.to">Beneficiary</p>
+              <p class="font-serif text-[19px] mt-1 leading-tight" data-i18n="flow.exporter">Authorized exporter's bank</p>
+            </div>
+          </div>
+          <p class="mt-3 text-center text-[12px] text-gold/90 tracking-[.08em]" data-i18n="flow.direct">Direct transfer · no intermediary account</p>
+          <div class="mt-7 border-t border-dashed border-white/20 pt-6 flex gap-4">
+            <span class="font-serif italic text-gold text-[22px] leading-none mt-1" aria-hidden="true">O</span>
+            <div>
+              <p class="text-[14px] text-paper font-medium" data-i18n="flow.orvex">Orvex &amp; Co. — coordination only</p>
+              <p class="text-[13px] text-white/55 mt-1" data-i18n="flow.orvexsub">No custody of funds or metal. Our fee is disbursed under the IMFPA at settlement.</p>
+            </div>
+          </div>
+          <dl class="mt-7 grid grid-cols-2 gap-px bg-white/10 text-[12px]">
+            <div class="bg-navy p-3"><dt class="text-white/45 uppercase tracking-[.12em] text-[10px]" data-i18n="flow.terms">Delivery</dt><dd class="mt-1 text-paper">FOB Ouagadougou · CIF</dd></div>
+            <div class="bg-navy p-3"><dt class="text-white/45 uppercase tracking-[.12em] text-[10px]" data-i18n="flow.assay">Assay</dt><dd class="mt-1 text-paper" data-i18n="flow.assayval">Independent, pre-settlement</dd></div>
+          </dl>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- VALUE PILLARS -->
+  <section id="services" class="gutter bg-paper">
+    <div class="wrap py-20 md:py-28">
+      <div class="grid lg:grid-cols-12 gap-10">
+        <div class="lg:col-span-5 min-w-0">
+          <p class="eyebrow text-gold" data-i18n="pill.eyebrow">Our framework</p>
+          <h2 class="mt-4 text-[32px] md:text-[42px] leading-[1.12] text-navy" data-i18n="pill.h2">A transaction discipline built for a high-scrutiny market.</h2>
+        </div>
+        <p class="lg:col-span-6 lg:col-start-7 self-end text-[17px] text-slate measure min-w-0" data-i18n="pill.intro">West African gold carries a reputation that serious buyers cannot ignore. Our framework is designed to answer every question a refinery compliance officer will ask — before the first introduction is made.</p>
+      </div>
+      <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-12">
+        <article class="pillar pt-6 min-w-0">
+          <h3 class="text-[22px] leading-snug text-navy" data-i18n="p1.t">Compliance Before Introduction</h3>
+          <p class="mt-3 text-[15px] text-slate" data-i18n="p1.b">No seller documentation is released until a counterparty has completed KYC, submitted a Client Information Sheet and provided verifiable proof of funds.</p>
+        </article>
+        <article class="pillar pt-6 min-w-0">
+          <h3 class="text-[22px] leading-snug text-navy" data-i18n="p2.t">Non-Custodial by Design</h3>
+          <p class="mt-3 text-[15px] text-slate" data-i18n="p2.b">Orvex never takes title to metal and never holds buyer funds. Payment flows directly between the buyer's bank and the authorized exporter's bank.</p>
+        </article>
+        <article class="pillar pt-6 min-w-0">
+          <h3 class="text-[22px] leading-snug text-navy" data-i18n="p3.t">Global Standards, Local Execution</h3>
+          <p class="mt-3 text-[15px] text-slate" data-i18n="p3.b">Our process is aligned with OECD due diligence guidance and Burkina Faso's Mining Code, and executed on the ground in Ouagadougou by vetted, licensed partners.</p>
+        </article>
+        <article class="pillar pt-6 min-w-0">
+          <h3 class="text-[22px] leading-snug text-navy" data-i18n="p4.t">Verification at Every Stage</h3>
+          <p class="mt-3 text-[15px] text-slate" data-i18n="p4.b">Export authorizations, permits and assay results are independently verified before settlement, not after.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST INDICATORS -->
+  <section id="commitments" class="gutter bg-charcoal text-paper">
+    <div class="wrap py-20 md:py-24">
+      <div class="flex flex-wrap items-end justify-between gap-6">
+        <div class="min-w-0">
+          <p class="eyebrow text-gold" data-i18n="trust.eyebrow">Standing commitments</p>
+          <h2 class="mt-4 text-[30px] md:text-[38px] leading-tight" data-i18n="trust.h2">Commitments we hold on every engagement.</h2>
+        </div>
+      </div>
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-10">
+        <div class="commit pt-5 min-w-0"><p class="font-serif text-[20px] text-gold" data-i18n="t1.t">Zero upfront fees</p><p class="mt-2 text-[14px] text-white/65" data-i18n="t1.b">Buyers are never asked to pay taxes, customs or handling fees before a verified assay.</p></div>
+        <div class="commit pt-5 min-w-0"><p class="font-serif text-[20px] text-gold" data-i18n="t2.t">Bank-to-bank settlement</p><p class="mt-2 text-[14px] text-white/65" data-i18n="t2.b">Funds move only between the buyer's bank and the licensed exporter's bank.</p></div>
+        <div class="commit pt-5 min-w-0"><p class="font-serif text-[20px] text-gold" data-i18n="t3.t">NCNDA &amp; IMFPA on every deal</p><p class="mt-2 text-[14px] text-white/65" data-i18n="t3.b">Every introduction is protected by executed non-circumvention and fee-protection agreements.</p></div>
+        <div class="commit pt-5 min-w-0"><p class="font-serif text-[20px] text-gold" data-i18n="t4.t">OECD-aligned due diligence</p><p class="mt-2 text-[14px] text-white/65" data-i18n="t4.b">Supply-chain risk is assessed against the OECD framework for high-risk areas.</p></div>
+        <div class="commit pt-5 min-w-0"><p class="font-serif text-[20px] text-gold" data-i18n="t5.t">Bilingual documentation</p><p class="mt-2 text-[14px] text-white/65" data-i18n="t5.b">Every engagement is supported in English and French, the working language in Burkina Faso.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENGAGEMENT PATH -->
+  <section id="protocol" class="gutter bg-mist">
+    <div class="wrap py-20 md:py-28">
+      <div class="flex flex-wrap items-end justify-between gap-6">
+        <h2 class="text-[30px] md:text-[40px] leading-tight text-navy max-w-[22ch]" data-i18n="path.h2">Five stages from inquiry to settlement.</h2>
+        <a href="#protocol" class="text-[13px] uppercase tracking-[.12em] text-navy border-b border-gold pb-1" data-i18n="path.link">View the full protocol →</a>
+      </div>
+      <ol class="mt-14 grid sm:grid-cols-2 lg:grid-cols-5 gap-px bg-rule border border-rule">
+        <li class="bg-paper p-6 min-w-0"><span class="step-num text-[34px]">I</span><p class="mt-4 font-medium text-navy" data-i18n="s1.t">Qualification</p><p class="mt-1 text-[14px] text-slate" data-i18n="s1.b">Inquiry, KYC and proof of funds.</p></li>
+        <li class="bg-paper p-6 min-w-0"><span class="step-num text-[34px]">II</span><p class="mt-4 font-medium text-navy" data-i18n="s2.t">Protection</p><p class="mt-1 text-[14px] text-slate" data-i18n="s2.b">NCNDA and IMFPA executed.</p></li>
+        <li class="bg-paper p-6 min-w-0"><span class="step-num text-[34px]">III</span><p class="mt-4 font-medium text-navy" data-i18n="s3.t">Verification</p><p class="mt-1 text-[14px] text-slate" data-i18n="s3.b">Full Corporate Offer and licence checks.</p></li>
+        <li class="bg-paper p-6 min-w-0"><span class="step-num text-[34px]">IV</span><p class="mt-4 font-medium text-navy" data-i18n="s4.t">Assay &amp; Logistics</p><p class="mt-1 text-[14px] text-slate" data-i18n="s4.b">Independent assay; FOB or CIF execution.</p></li>
+        <li class="bg-paper p-6 min-w-0"><span class="step-num text-[34px]">V</span><p class="mt-4 font-medium text-navy" data-i18n="s5.t">Settlement</p><p class="mt-1 text-[14px] text-slate" data-i18n="s5.b">Bank-to-bank payment and fee disbursement.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CLOSING CTA -->
+  <section id="inquiry" class="gutter bg-navy text-paper">
+    <div class="wrap py-20 md:py-24 grid lg:grid-cols-12 gap-10 items-end">
+      <div class="lg:col-span-7 min-w-0">
+        <div class="hairline mb-6" aria-hidden="true"></div>
+        <h2 class="text-[32px] md:text-[44px] leading-[1.1]" data-i18n="cta.h2">Every engagement begins with qualification.</h2>
+        <p class="mt-5 text-[17px] text-white/70 measure font-light" data-i18n="cta.b">Submit a confidential inquiry. A member of our team will review your profile and respond with next steps and the required documentation.</p>
+      </div>
+      <div class="lg:col-span-5 flex flex-wrap gap-4 lg:justify-end">
+        <a href="#inquiry" class="btn-gold text-[13px] uppercase px-7 py-4" data-i18n="cta.b1">Submit an Inquiry</a>
+        <a href="#contact" class="btn-line text-[13px] uppercase px-7 py-4" data-i18n="cta.b2">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRAUD NOTICE -->
+  <div class="gutter bg-gold text-navy">
+    <p class="wrap py-3 text-[13px] leading-snug"><span class="font-semibold uppercase tracking-[.12em] mr-2" data-i18n="fraud.label">Fraud notice</span><span data-i18n="fraud.b">Orvex &amp; Co. Advisory will never request advance payment of taxes, duties or fees. Report any such request to</span> <span class="font-medium select-all">compliance@orvexco.com</span></p>
+  </div>
+</main>
+
+<footer id="contact" class="gutter bg-charcoal text-white/70" data-swap>
+  <div class="wrap py-14 grid sm:grid-cols-2 lg:grid-cols-12 gap-10 text-[14px]">
+    <div class="lg:col-span-4 min-w-0">
+      <p class="flex items-baseline gap-2"><span class="font-serif text-[22px] text-paper">Orvex</span><span class="font-serif italic text-gold text-[17px]">&amp; Co. Advisory</span></p>
+      <p class="mt-3 max-w-[34ch]" data-i18n="foot.line">Gold sourcing and mining advisory, Burkina Faso.</p>
+    </div>
+    <div class="lg:col-span-2"><p class="eyebrow text-gold text-[11px]" data-i18n="foot.services">Services</p><ul class="mt-3 space-y-2"><li data-i18n="foot.s1">Doré Gold Sourcing</li><li data-i18n="foot.s2">Permit &amp; JV Advisory</li></ul></div>
+    <div class="lg:col-span-2"><p class="eyebrow text-gold text-[11px]" data-i18n="foot.firm">Firm</p><ul class="mt-3 space-y-2"><li data-i18n="nav.about">About</li><li data-i18n="nav.compliance">Compliance</li><li data-i18n="nav.portal">Inquiry Portal</li></ul></div>
+    <div class="lg:col-span-4 min-w-0"><p class="eyebrow text-gold text-[11px]" data-i18n="foot.contact">Contact</p><ul class="mt-3 space-y-2 break-words"><li class="select-all">inquiries@orvexco.com</li><li class="select-all">compliance@orvexco.com</li></ul></div>
+  </div>
+  <div class="wrap border-t border-white/10 py-8 text-[12px] leading-relaxed text-white/45">
+    <p class="max-w-[110ch]" data-i18n="foot.legal">Orvex &amp; Co. Advisory acts solely as an intermediary and facilitator. It does not take title to or possession of any commodity, does not hold client funds and is not a party to any sale. Orvex does not offer, sell or solicit securities and is not a registered broker-dealer. Nothing on this website constitutes an offer to sell or a solicitation to buy any commodity, security or interest.</p>
+    <p class="mt-4">© 2026 Orvex &amp; Co. Advisory · <span data-i18n="foot.privacy">Privacy Notice</span> · <span data-i18n="foot.terms">Terms of Use</span></p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var FR = {
+    'nav.home': 'Accueil', 'nav.services': 'Services', 'nav.compliance': 'Conformité', 'nav.about': 'À propos', 'nav.portal': 'Portail des demandes', 'nav.cta': 'Soumettre une demande',
+    'hero.eyebrow': 'Approvisionnement en or et conseil minier · Burkina Faso',
+    'hero.h1': "L'or du Burkina Faso, traité selon les standards institutionnels.",
+    'hero.sub': "Orvex & Co. Advisory met en relation raffineries, acheteurs institutionnels et investisseurs miniers avec des contreparties vérifiées et dûment autorisées au Burkina Faso, dans un cadre non dépositaire fondé sur la conformité.",
+    'hero.cta1': 'Démarrer la qualification', 'hero.cta2': 'Consulter notre protocole de conformité',
+    'hero.assure': "Nous ne prenons jamais possession du métal ni des fonds de nos clients. Le règlement s'effectue de banque à banque entre l'acheteur et l'exportateur agréé.",
+    'flow.title': 'Circuit de règlement', 'flow.from': 'Origine des fonds', 'flow.buyer': "Banque de l'acheteur", 'flow.to': 'Bénéficiaire', 'flow.exporter': "Banque de l'exportateur agréé",
+    'flow.direct': 'Virement direct · aucun compte intermédiaire', 'flow.orvex': 'Orvex & Co. — coordination uniquement',
+    'flow.orvexsub': "Aucune détention de fonds ni de métal. Nos honoraires sont versés au titre de l'IMFPA lors du règlement.",
+    'flow.terms': 'Livraison', 'flow.assay': 'Essai', 'flow.assayval': 'Indépendant, avant règlement',
+    'pill.eyebrow': 'Notre cadre', 'pill.h2': 'Une discipline transactionnelle conçue pour un marché sous haute surveillance.',
+    'pill.intro': "L'or ouest-africain porte une réputation que les acheteurs sérieux ne peuvent ignorer. Notre cadre répond à chaque question d'un responsable conformité de raffinerie, avant toute mise en relation.",
+    'p1.t': 'La conformité avant la mise en relation', 'p1.b': "Aucun document vendeur n'est transmis avant que la contrepartie n'ait complété le KYC, remis sa fiche d'information client et fourni un justificatif de fonds vérifiable.",
+    'p2.t': 'Non dépositaire par principe', 'p2.b': "Orvex ne prend jamais possession du métal ni des fonds des acheteurs. Le paiement circule directement entre la banque de l'acheteur et celle de l'exportateur agréé.",
+    'p3.t': 'Standards internationaux, exécution locale', 'p3.b': "Notre processus est aligné sur les lignes directrices de l'OCDE et sur le Code minier du Burkina Faso, et exécuté à Ouagadougou par des partenaires agréés et vérifiés.",
+    'p4.t': 'Vérification à chaque étape', 'p4.b': "Autorisations d'exportation, permis et résultats d'essai sont vérifiés de manière indépendante avant le règlement, et non après.",
+    'trust.eyebrow': 'Engagements permanents', 'trust.h2': 'Des engagements tenus sur chaque mandat.',
+    't1.t': 'Aucun frais préalable', 't1.b': "Il n'est jamais demandé à l'acheteur de payer taxes, droits de douane ou frais de manutention avant un essai vérifié.",
+    't2.t': 'Règlement de banque à banque', 't2.b': "Les fonds circulent uniquement entre la banque de l'acheteur et celle de l'exportateur agréé.",
+    't3.t': 'NCNDA et IMFPA sur chaque opération', 't3.b': 'Chaque mise en relation est protégée par des accords de non-contournement et de protection des honoraires dûment signés.',
+    't4.t': "Diligence raisonnable alignée sur l'OCDE", 't4.b': "Le risque de la chaîne d'approvisionnement est évalué selon le cadre de l'OCDE pour les zones à haut risque.",
+    't5.t': 'Documentation bilingue', 't5.b': 'Chaque mandat est accompagné en anglais et en français, langue de travail au Burkina Faso.',
+    'path.h2': 'Cinq étapes, de la demande au règlement.', 'path.link': 'Voir le protocole complet →',
+    's1.t': 'Qualification', 's1.b': 'Demande, KYC et justificatif de fonds.',
+    's2.t': 'Protection', 's2.b': 'Signature de la NCNDA et de l’IMFPA.',
+    's3.t': 'Vérification', 's3.b': 'Offre ferme (FCO) et contrôle des licences.',
+    's4.t': 'Essai et logistique', 's4.b': 'Essai indépendant ; exécution FOB ou CIF.',
+    's5.t': 'Règlement', 's5.b': 'Paiement de banque à banque et versement des honoraires.',
+    'cta.h2': 'Chaque mandat commence par une qualification.',
+    'cta.b': 'Soumettez une demande confidentielle. Un membre de notre équipe examinera votre profil et vous indiquera les prochaines étapes et les documents requis.',
+    'cta.b1': 'Soumettre une demande', 'cta.b2': 'Nous contacter',
+    'fraud.label': 'Avis anti-fraude', 'fraud.b': 'Orvex & Co. Advisory ne demande jamais le paiement anticipé de taxes, droits ou frais. Signalez toute demande de ce type à',
+    'foot.line': 'Approvisionnement en or et conseil minier, Burkina Faso.', 'foot.services': 'Services', 'foot.s1': "Approvisionnement en or doré", 'foot.s2': 'Conseil en permis et coentreprises',
+    'foot.firm': 'Le cabinet', 'foot.contact': 'Contact',
+    'foot.legal': "Orvex & Co. Advisory agit uniquement en qualité d'intermédiaire et de facilitateur. Le cabinet ne prend ni titre ni possession d'aucune marchandise, ne détient aucun fonds de client et n'est partie à aucune vente. Orvex n'offre, ne vend ni ne sollicite de valeurs mobilières et n'est pas un courtier-négociant enregistré. Rien sur ce site ne constitue une offre de vente ou une sollicitation d'achat d'une marchandise, d'une valeur mobilière ou d'un intérêt.",
+    'foot.privacy': 'Politique de confidentialité', 'foot.terms': "Conditions d'utilisation"
+  };
+  var nodes = Array.prototype.slice.call(document.querySelectorAll('[data-i18n]'));
+  var EN = {};
+  nodes.forEach(function (n) { var k = n.getAttribute('data-i18n'); if (!(k in EN)) EN[k] = n.textContent; });
+
+  function apply(lang) {
+    var dict = lang === 'fr' ? FR : EN;
+    nodes.forEach(function (n) { var k = n.getAttribute('data-i18n'); if (dict[k] != null) n.textContent = dict[k]; });
+    document.documentElement.lang = lang;
+    document.getElementById('lang-en').setAttribute('aria-pressed', String(lang === 'en'));
+    document.getElementById('lang-fr').setAttribute('aria-pressed', String(lang === 'fr'));
+    try { localStorage.setItem('orvex-lang', lang); } catch (e) {}
+  }
+  function switchTo(lang) {
+    document.body.classList.add('swapping');
+    setTimeout(function () { apply(lang); document.body.classList.remove('swapping'); }, 160);
+  }
+  document.querySelectorAll('[data-lang]').forEach(function (b) {
+    b.addEventListener('click', function () { switchTo(b.getAttribute('data-lang')); });
+  });
+  var saved = 'en';
+  try { saved = localStorage.getItem('orvex-lang') || 'en'; } catch (e) {}
+  if (saved === 'fr') apply('fr');
+
+  var btn = document.getElementById('menu-btn'), mnav = document.getElementById('mobile-nav');
+  btn.addEventListener('click', function () {
+    var open = mnav.hidden; mnav.hidden = !open; btn.setAttribute('aria-expanded', String(open));
+  });
+  mnav.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { mnav.hidden = true; btn.setAttribute('aria-expanded', 'false'); }); });
+})();
+</script>
+
+</body></html>

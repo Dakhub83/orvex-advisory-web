@@ -1,0 +1,292 @@
+{
+  "meta": {
+    "siteName": "Orvex & Co. Advisory",
+    "description": "Orvex & Co. Advisory met en relation raffineries, acheteurs institutionnels et investisseurs miniers avec des contreparties vérifiées et dûment autorisées au Burkina Faso, dans un cadre non dépositaire fondé sur la conformité.",
+    "services": "Services",
+    "compliance": "Conformité",
+    "about": "À propos",
+    "inquiry": "Portail des demandes",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation"
+  },
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "compliance": "Conformité",
+    "about": "À propos",
+    "portal": "Portail des demandes",
+    "cta": "Soumettre une demande",
+    "menu": "Menu",
+    "language": "Langue",
+    "primary": "Navigation principale",
+    "mobile": "Navigation mobile",
+    "brandHome": "Orvex & Co. Advisory, accueil",
+    "skip": "Aller au contenu",
+    "advisory": "Advisory"
+  },
+  "hero": {
+    "eyebrow": "Approvisionnement en or et conseil minier · Burkina Faso",
+    "h1": "L'or du Burkina Faso, traité selon les standards institutionnels.",
+    "sub": "Orvex & Co. Advisory met en relation raffineries, acheteurs institutionnels et investisseurs miniers avec des contreparties vérifiées et dûment autorisées au Burkina Faso, dans un cadre non dépositaire fondé sur la conformité.",
+    "cta1": "Démarrer la qualification",
+    "cta2": "Consulter notre protocole de conformité",
+    "assure": "Nous ne prenons jamais possession du métal ni des fonds de nos clients. Le règlement s'effectue de banque à banque entre l'acheteur et l'exportateur agréé."
+  },
+  "flow": {
+    "title": "Circuit de règlement",
+    "from": "Origine des fonds",
+    "buyer": "Banque de l'acheteur",
+    "to": "Bénéficiaire",
+    "exporter": "Banque de l'exportateur agréé",
+    "direct": "Virement direct · aucun compte intermédiaire",
+    "orvex": "Orvex & Co. — coordination uniquement",
+    "orvexSub": "Aucune détention de fonds ni de métal. Nos honoraires sont versés au titre de l'IMFPA lors du règlement.",
+    "terms": "Livraison",
+    "termsValue": "FOB Ouagadougou · CIF",
+    "assay": "Essai",
+    "assayValue": "Indépendant, avant règlement"
+  },
+  "pillars": {
+    "eyebrow": "Notre cadre",
+    "h2": "Une discipline transactionnelle conçue pour un marché sous haute surveillance.",
+    "intro": "L'or ouest-africain porte une réputation que les acheteurs sérieux ne peuvent ignorer. Notre cadre répond à chaque question d'un responsable conformité de raffinerie, avant toute mise en relation.",
+    "p1": {
+      "title": "La conformité avant la mise en relation",
+      "body": "Aucun document vendeur n'est transmis avant que la contrepartie n'ait complété le KYC, remis sa fiche d'information client et fourni un justificatif de fonds vérifiable."
+    },
+    "p2": {
+      "title": "Non dépositaire par principe",
+      "body": "Orvex ne prend jamais possession du métal ni des fonds des acheteurs. Le paiement circule directement entre la banque de l'acheteur et celle de l'exportateur agréé."
+    },
+    "p3": {
+      "title": "Standards internationaux, exécution locale",
+      "body": "Notre processus est aligné sur les lignes directrices de l'OCDE et sur le Code minier du Burkina Faso, et exécuté à Ouagadougou par des partenaires agréés et vérifiés."
+    },
+    "p4": {
+      "title": "Vérification à chaque étape",
+      "body": "Autorisations d'exportation, permis et résultats d'essai sont vérifiés de manière indépendante avant le règlement, et non après."
+    }
+  },
+  "commitments": {
+    "eyebrow": "Engagements permanents",
+    "h2": "Des engagements tenus sur chaque mandat.",
+    "c1": {
+      "title": "Aucun frais préalable",
+      "body": "Il n'est jamais demandé à l'acheteur de payer taxes, droits de douane ou frais de manutention avant un essai vérifié."
+    },
+    "c2": {
+      "title": "Règlement de banque à banque",
+      "body": "Les fonds circulent uniquement entre la banque de l'acheteur et celle de l'exportateur agréé."
+    },
+    "c3": {
+      "title": "NCNDA et IMFPA sur chaque opération",
+      "body": "Chaque mise en relation est protégée par des accords de non-contournement et de protection des honoraires dûment signés."
+    },
+    "c4": {
+      "title": "Diligence raisonnable alignée sur l'OCDE",
+      "body": "Le risque de la chaîne d'approvisionnement est évalué selon le cadre de l'OCDE pour les zones à haut risque."
+    },
+    "c5": {
+      "title": "Documentation bilingue",
+      "body": "Chaque mandat est accompagné en anglais et en français, langue de travail au Burkina Faso."
+    }
+  },
+  "stages": {
+    "h2": "Cinq étapes, de la demande au règlement.",
+    "link": "Voir le protocole complet →",
+    "s1": {
+      "title": "Qualification",
+      "body": "Demande, KYC et justificatif de fonds.",
+      "detail": "La contrepartie soumet une demande, complète le KYC, remet sa fiche d'information client et fournit un justificatif de fonds vérifiable. Aucun document vendeur n'est transmis avant la fin de cette étape."
+    },
+    "s2": {
+      "title": "Protection",
+      "body": "Signature de la NCNDA et de l'IMFPA.",
+      "detail": "Les accords de non-contournement et de protection des honoraires sont signés, de sorte que chaque mise en relation est protégée dès le départ."
+    },
+    "s3": {
+      "title": "Vérification",
+      "body": "Offre ferme (FCO) et contrôle des licences.",
+      "detail": "L'offre ferme (FCO) est examinée, et les autorisations d'exportation, permis et licences sont vérifiés de manière indépendante."
+    },
+    "s4": {
+      "title": "Essai et logistique",
+      "body": "Essai indépendant ; exécution FOB ou CIF.",
+      "detail": "Le métal fait l'objet d'un essai indépendant avant le règlement, et la livraison est exécutée FOB Ouagadougou ou CIF. Il n'est jamais demandé à l'acheteur de payer taxes, droits de douane ou frais de manutention avant un essai vérifié."
+    },
+    "s5": {
+      "title": "Règlement",
+      "body": "Paiement de banque à banque et versement des honoraires.",
+      "detail": "Le paiement circule directement de la banque de l'acheteur à celle de l'exportateur agréé, sans compte intermédiaire. Nos honoraires sont versés au titre de l'IMFPA lors du règlement."
+    }
+  },
+  "cta": {
+    "h2": "Chaque mandat commence par une qualification.",
+    "body": "Soumettez une demande confidentielle. Un membre de notre équipe examinera votre profil et vous indiquera les prochaines étapes et les documents requis.",
+    "button1": "Soumettre une demande",
+    "button2": "Nous contacter"
+  },
+  "fraud": {
+    "label": "Avis anti-fraude",
+    "body": "Orvex & Co. Advisory ne demande jamais le paiement anticipé de taxes, droits ou frais. Signalez toute demande de ce type à"
+  },
+  "footer": {
+    "line": "Approvisionnement en or et conseil minier, Burkina Faso.",
+    "services": "Services",
+    "s1": "Approvisionnement en or doré",
+    "s2": "Conseil en permis et coentreprises",
+    "firm": "Le cabinet",
+    "contact": "Contact",
+    "legal": "Orvex & Co. Advisory agit uniquement en qualité d'intermédiaire et de facilitateur. Le cabinet ne prend ni titre ni possession d'aucune marchandise, ne détient aucun fonds de client et n'est partie à aucune vente. Orvex n'offre, ne vend ni ne sollicite de valeurs mobilières et n'est pas un courtier-négociant enregistré. Rien sur ce site ne constitue une offre de vente ou une sollicitation d'achat d'une marchandise, d'une valeur mobilière ou d'un intérêt.",
+    "copyright": "© 2026 Orvex & Co. Advisory",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation"
+  },
+  "servicesPage": {
+    "eyebrow": "Services",
+    "h1": "Deux mandats de conseil, un même cadre fondé sur la conformité.",
+    "intro": "Nous accompagnons raffineries, acheteurs institutionnels et investisseurs miniers à la recherche de contreparties vérifiées et dûment autorisées au Burkina Faso.",
+    "forLabel": "Pour",
+    "dore": {
+      "title": "Approvisionnement en or doré",
+      "audience": "Raffineries et acheteurs institutionnels",
+      "body": "Nous mettons en relation des acheteurs qualifiés avec des exportateurs dûment autorisés au Burkina Faso, et coordonnons la transaction de la qualification au règlement.",
+      "b1": "Qualification de la contrepartie avant toute transmission de documents vendeur",
+      "b2": "Essai indépendant avant le règlement",
+      "b3": "Livraison FOB Ouagadougou ou CIF",
+      "b4": "Règlement direct de banque à banque, sans compte intermédiaire"
+    },
+    "permit": {
+      "title": "Conseil en permis et coentreprises",
+      "audience": "Investisseurs miniers",
+      "body": "Nous mettons en relation les investisseurs miniers avec des contreparties vérifiées et dûment autorisées au Burkina Faso, avec la même discipline que pour chaque transaction.",
+      "b1": "Permis et autorisations vérifiés de manière indépendante",
+      "b2": "Processus aligné sur le Code minier du Burkina Faso",
+      "b3": "Exécution locale à Ouagadougou par des partenaires agréés et vérifiés",
+      "b4": "Mandats accompagnés en anglais et en français"
+    }
+  },
+  "compliancePage": {
+    "eyebrow": "Conformité",
+    "h1": "Notre protocole de conformité.",
+    "intro": "Chaque mandat suit les mêmes cinq étapes, et chaque étape doit être achevée avant le début de la suivante.",
+    "protocolEyebrow": "Le protocole",
+    "requirementsEyebrow": "Avant toute mise en relation",
+    "requirementsH2": "Ce que nous exigeons de chaque contrepartie.",
+    "r1": "Un KYC complété",
+    "r2": "Une fiche d'information client",
+    "r3": "Un justificatif de fonds vérifiable"
+  },
+  "aboutPage": {
+    "eyebrow": "À propos",
+    "h1": "Intermédiaire et facilitateur, par principe.",
+    "intro": "Orvex & Co. Advisory est un cabinet d'approvisionnement en or et de conseil minier dédié au Burkina Faso. Nous coordonnons les transactions entre contreparties vérifiées et dûment autorisées, et restons en dehors des flux de métal et de fonds.",
+    "doesH2": "Ce que nous faisons",
+    "does1": "Mettre en relation raffineries, acheteurs institutionnels et investisseurs miniers avec des contreparties vérifiées et dûment autorisées",
+    "does2": "Qualifier les contreparties avant toute mise en relation",
+    "does3": "Coordonner la vérification, l'essai et la logistique jusqu'au règlement",
+    "does4": "Accompagner chaque mandat en anglais et en français",
+    "doesNotH2": "Ce que nous ne faisons pas",
+    "doesNot1": "Prendre titre ou possession d'une marchandise",
+    "doesNot2": "Détenir des fonds de clients",
+    "doesNot3": "Être partie à une vente",
+    "doesNot4": "Offrir, vendre ou solliciter des valeurs mobilières",
+    "pathEyebrow": "Circulation des fonds",
+    "pathH2": "Nous coordonnons. Les banques règlent.",
+    "pathBody": "Le paiement circule directement de la banque de l'acheteur à celle de l'exportateur agréé. Nous n'intervenons jamais entre les deux, et nos honoraires sont versés au titre de l'IMFPA lors du règlement."
+  },
+  "inquiryPage": {
+    "eyebrow": "Portail des demandes",
+    "h1": "Chaque mandat commence par une qualification.",
+    "intro": "Soumettez une demande confidentielle. Un membre de notre équipe examinera votre profil et vous indiquera les prochaines étapes et les documents requis.",
+    "nextH2": "Prochaines étapes",
+    "next1": "Nous examinons votre profil.",
+    "next2": "Nous vous indiquons les prochaines étapes et les documents requis.",
+    "next3": "La qualification se poursuit avec le KYC, la fiche d'information client et le justificatif de fonds.",
+    "noDocs": "Merci de ne pas joindre de documents KYC ni de coordonnées bancaires à ce formulaire. Nous vous indiquerons comment les transmettre en toute sécurité.",
+    "contactH2": "Contact",
+    "contactInquiries": "Demandes générales",
+    "contactCompliance": "Conformité et signalement de fraude"
+  },
+  "form": {
+    "title": "Votre demande",
+    "requiredNote": "Tous les champs sont obligatoires, sauf mention facultative.",
+    "optional": "facultatif",
+    "fullName": "Nom complet",
+    "organization": "Organisation",
+    "role": "Fonction",
+    "email": "E-mail professionnel",
+    "phone": "Téléphone",
+    "country": "Pays",
+    "counterpartyType": "Vous êtes",
+    "service": "Service souhaité",
+    "scope": "Volume indicatif ou périmètre",
+    "message": "Votre demande",
+    "consent": "J'accepte qu'Orvex & Co. Advisory utilise ces informations pour examiner ma demande et y répondre, comme décrit dans la",
+    "consentLink": "Politique de confidentialité",
+    "website": "Laissez ce champ vide",
+    "select": "Sélectionner…",
+    "types": {
+      "refinery": "Raffinerie",
+      "institutionalBuyer": "Acheteur institutionnel",
+      "miningInvestor": "Investisseur minier",
+      "other": "Autre"
+    },
+    "services": {
+      "doreSourcing": "Approvisionnement en or doré",
+      "permitJv": "Conseil en permis et coentreprises",
+      "unsure": "Pas encore défini"
+    },
+    "submit": "Soumettre la demande",
+    "submitting": "Envoi en cours…",
+    "errors": {
+      "summary": "Veuillez vérifier les champs signalés.",
+      "required": "Ce champ est obligatoire.",
+      "email": "Saisissez une adresse e-mail valide.",
+      "tooLong": "Cette saisie est trop longue.",
+      "invalid": "Sélectionnez l'une des options.",
+      "consent": "Votre accord est nécessaire pour soumettre cette demande.",
+      "rateLimited": "Trop d'envois. Veuillez réessayer plus tard ou nous écrire à {email}.",
+      "delivery": "Votre demande n'a pas pu être envoyée. Veuillez réessayer ou nous écrire à {email}."
+    },
+    "success": {
+      "title": "Merci. Votre demande a bien été reçue.",
+      "body": "Un membre de notre équipe examinera votre profil et vous indiquera les prochaines étapes et les documents requis.",
+      "again": "Soumettre une autre demande"
+    }
+  },
+  "privacyPage": {
+    "h1": "Politique de confidentialité",
+    "intro": "Cette politique explique comment Orvex & Co. Advisory traite les informations que vous transmettez sur ce site.",
+    "collectH2": "Ce que nous collectons",
+    "collect": "Lorsque vous soumettez une demande, nous recevons les informations saisies dans le formulaire : votre nom, votre organisation, votre fonction, vos coordonnées, votre pays, la nature de votre intérêt et votre message.",
+    "useH2": "Comment nous les utilisons",
+    "use": "Nous utilisons ces informations pour examiner votre demande, vous répondre et mener la qualification si le mandat se poursuit. Nous ne les vendons pas.",
+    "shareH2": "Qui peut y accéder",
+    "share": "Les demandes parviennent à notre équipe par e-mail, par l'intermédiaire des prestataires qui acheminent et hébergent nos messages et ce site. Vos informations ne sont communiquées à aucune contrepartie à votre insu.",
+    "keepH2": "Durée de conservation",
+    "keep": "Nous conservons les demandes aussi longtemps que nécessaire pour vous répondre, et aussi longtemps que l'exigent nos obligations légales et de conformité.",
+    "cookiesH2": "Cookies",
+    "cookies": "Ce site utilise un seul cookie, qui mémorise votre préférence de langue. Il n'utilise aucun cookie publicitaire.",
+    "contactH2": "Vos questions et demandes",
+    "contact": "Pour consulter, corriger ou supprimer vos informations, écrivez à"
+  },
+  "termsPage": {
+    "h1": "Conditions d'utilisation",
+    "intro": "En utilisant ce site, vous acceptez les conditions suivantes.",
+    "roleH2": "Notre rôle",
+    "role": "Orvex & Co. Advisory agit uniquement en qualité d'intermédiaire et de facilitateur. Le cabinet ne prend ni titre ni possession d'aucune marchandise, ne détient aucun fonds de client et n'est partie à aucune vente.",
+    "noOfferH2": "Absence d'offre",
+    "noOffer": "Orvex n'offre, ne vend ni ne sollicite de valeurs mobilières et n'est pas un courtier-négociant enregistré. Rien sur ce site ne constitue une offre de vente ou une sollicitation d'achat d'une marchandise, d'une valeur mobilière ou d'un intérêt.",
+    "infoH2": "Informations publiées sur ce site",
+    "info": "Ce site est fourni à titre d'information générale. Tout mandat est régi exclusivement par les accords signés entre les parties.",
+    "fraudH2": "Fraude",
+    "fraud": "Orvex & Co. Advisory ne demande jamais le paiement anticipé de taxes, droits ou frais. Signalez toute demande de ce type à"
+  },
+  "notFound": {
+    "eyebrow": "Page introuvable",
+    "h1": "Cette page n'existe pas.",
+    "body": "La page que vous recherchez a peut-être été déplacée.",
+    "home": "Retour à l'accueil"
+  }
+}
