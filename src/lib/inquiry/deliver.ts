@@ -3,6 +3,13 @@ import type { Inquiry } from "./schema";
 
 const RESEND_ENDPOINT = "https://api.resend.com/emails";
 
+const VOLUME_LABELS: Record<Inquiry["scope"], string> = {
+  "": "",
+  trial: "5 kg – 10 kg (Trial Allocation)",
+  standard: "10 kg – 50 kg (Standard Commercial Mandate)",
+  institutional: "50 kg+ (Institutional Off-Take Agreement)",
+};
+
 function formatBody(inquiry: Inquiry, locale: string) {
   return [
     ["Name", inquiry.fullName],
@@ -13,7 +20,7 @@ function formatBody(inquiry: Inquiry, locale: string) {
     ["Country", inquiry.country],
     ["Counterparty type", inquiry.counterpartyType],
     ["Service", inquiry.service],
-    ["Volume or scope", inquiry.scope],
+    ["Indicative volume", VOLUME_LABELS[inquiry.scope]],
     ["Language", locale],
     ["Message", `\n${inquiry.message}`],
   ]

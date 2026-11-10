@@ -43,6 +43,16 @@ This site makes regulated-sounding claims for a high-scrutiny business, so copy 
 - The form must not collect KYC documents or bank details.
 - Inquiries contain personal data. Do not log them in production, and do not persist them in the repository.
 
+## Gold price strip
+
+The strip above the menu shows the goldprice.dev XAU/USD spot price ([gold-price.ts](src/lib/gold-price.ts)). Their terms set these rules:
+
+- Keep the "Data: goldprice.dev" link next to the prices while on a free plan or keyless.
+- Do not expose the price through a public API route of our own: that counts as redistribution. Render it on the server.
+- Never present it as an official benchmark or as Orvex's price. Keep the "indicative" and "not an offer" labels.
+- Never show a placeholder or invented price. If the provider fails, show the unavailable message.
+- The "delayed 15 min" wording assumes a free plan. Update it if a paid, live plan is used.
+
 ## Styling
 
 - Brand tokens and shared component classes are in `src/app/globals.css`. Prefer them over new colours.

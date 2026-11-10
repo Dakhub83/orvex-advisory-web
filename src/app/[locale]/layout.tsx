@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { FraudNotice } from "@/components/layout/FraudNotice";
+import { GoldTicker } from "@/components/layout/GoldTicker";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { routing, type Locale } from "@/i18n/routing";
@@ -59,6 +60,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
         </a>
         {/* Only the namespaces that client components read are sent to the browser. */}
         <NextIntlClientProvider messages={{ nav: messages.nav, form: messages.form }}>
+          <GoldTicker />
           <SiteHeader />
           <main id="main" className="flex-1">
             {children}

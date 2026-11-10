@@ -46,6 +46,21 @@
     background: var(--color-navy);
   }
 
+  /* Safety net for long French words and email addresses: an unbreakable
+     string wraps instead of spilling out of its card. Text that fits is
+     unaffected. */
+  h1,
+  h2,
+  h3,
+  p,
+  li,
+  dt,
+  dd,
+  a,
+  label {
+    overflow-wrap: break-word;
+  }
+
   h1,
   h2,
   h3 {
@@ -189,6 +204,22 @@
     border-bottom: 4.5px solid transparent;
   }
 
+  .flow-arrow-down {
+    width: 1px;
+    height: 100%;
+    background: var(--color-gold);
+    position: relative;
+  }
+  .flow-arrow-down::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: -4px;
+    border-top: 7px solid var(--color-gold);
+    border-left: 4.5px solid transparent;
+    border-right: 4.5px solid transparent;
+  }
+
   .pillar {
     border-top: 1px solid var(--color-rule);
   }
@@ -203,22 +234,57 @@
     border-top: 1px solid rgb(197 160 89 / 0.35);
   }
 
+  /* Form fields: slate at rest, navy on hover, gold when focused, and a
+     navy edge once a field has been filled in validly. Server-reported
+     errors take precedence. */
   .field {
     display: block;
     width: 100%;
+    min-height: 50px;
     border: 1px solid #aeb4bc;
     background: var(--color-paper);
     color: var(--color-charcoal);
     padding: 12px 14px;
     font-size: 16px;
+    line-height: 1.5;
     border-radius: 0;
+    transition:
+      border-color 0.15s,
+      box-shadow 0.15s,
+      background-color 0.15s;
+  }
+  .field:hover {
+    border-color: var(--color-slate);
   }
   .field:focus-visible {
-    outline: 2px solid var(--color-gold);
-    outline-offset: 1px;
+    outline: none;
+    border-color: var(--color-gold);
+    box-shadow: 0 0 0 3px rgb(197 160 89 / 0.28);
   }
-  .field[aria-invalid="true"] {
+  .field:user-valid:not(:focus-visible) {
+    border-color: var(--color-navy);
+  }
+  .field[aria-invalid="true"],
+  .field[aria-invalid="true"]:hover {
     border-color: var(--color-error);
+    background-color: rgb(161 42 42 / 0.03);
+  }
+  .field[aria-invalid="true"]:focus-visible {
+    box-shadow: 0 0 0 3px rgb(161 42 42 / 0.18);
+  }
+  select.field {
+    appearance: none;
+    padding-right: 44px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%230B192C' stroke-width='1.4'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    text-overflow: ellipsis;
+  }
+  select.field:has(option[value=""]:checked) {
+    color: var(--color-slate);
+  }
+  select.field option {
+    color: var(--color-charcoal);
   }
 
   .prose-legal h2 {
@@ -236,6 +302,25 @@
     border-bottom: 1px solid var(--color-gold);
   }
 
+  /* Gold price ticker tape: content is two identical halves, so moving it by
+     half its width loops without a jump. */
+  .tape {
+    mask-image: linear-gradient(to right, transparent, black 32px, black calc(100% - 32px), transparent);
+  }
+  .tape-track {
+    width: max-content;
+    animation: tape-roll 70s linear infinite;
+  }
+  .tape:hover .tape-track,
+  aside:focus-within .tape-track {
+    animation-play-state: paused;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .tape-track {
+      animation: none;
+    }
+  }
+
   .fade-in {
     animation: rise 0.7s ease-out both;
   }
@@ -246,6 +331,12 @@
     .fade-in {
       animation: none;
     }
+  }
+}
+
+@keyframes tape-roll {
+  to {
+    transform: translateX(-50%);
   }
 }
 

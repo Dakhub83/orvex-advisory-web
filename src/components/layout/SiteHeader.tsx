@@ -22,7 +22,7 @@ function NavLinks({ onNavigate }: { onNavigate?: () => void }) {
       <Link
         key={href}
         href={href}
-        className="navlink py-2"
+        className="navlink py-2 whitespace-nowrap"
         aria-current={active ? "page" : undefined}
         onClick={onNavigate}
       >
@@ -37,7 +37,7 @@ function LanguageSwitcher() {
   const pathname = usePathname();
   const current = useLocale();
   return (
-    <div className="lang flex border border-white/20" role="group" aria-label={t("language")}>
+    <div className="lang flex shrink-0 border border-white/20" role="group" aria-label={t("language")}>
       {routing.locales.map((locale) => (
         <Link
           key={locale}
@@ -67,17 +67,21 @@ export function SiteHeader() {
             <span className="font-serif italic text-[18px] text-gold">&amp; Co.</span>
             <span className="hidden sm:inline eyebrow text-[10px] text-white/50 ml-1">{t("advisory")}</span>
           </Link>
-          <nav className="hidden lg:flex items-center gap-8" aria-label={t("primary")}>
+          {/* Full menu only from 1280px: below that the French labels do not fit on one line. */}
+          <nav className="hidden xl:flex items-center gap-8 min-w-0" aria-label={t("primary")}>
             <NavLinks />
           </nav>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 shrink-0">
             <LanguageSwitcher />
-            <Link href="/inquiry" className="btn-gold hidden md:inline-block text-[13px] px-5 py-3 uppercase">
+            <Link
+              href="/inquiry"
+              className="btn-gold hidden md:inline-block text-[13px] px-5 py-3 uppercase whitespace-nowrap"
+            >
               {t("cta")}
             </Link>
             <button
               type="button"
-              className="lg:hidden text-paper p-2"
+              className="xl:hidden text-paper p-2"
               aria-expanded={menuOpen}
               aria-controls="mobile-nav"
               aria-label={t("menu")}
@@ -91,7 +95,7 @@ export function SiteHeader() {
         </div>
         <nav
           id="mobile-nav"
-          className={`lg:hidden wrap pb-5 flex-col gap-1 ${menuOpen ? "flex" : "hidden"}`}
+          className={`xl:hidden wrap pb-5 flex-col gap-1 ${menuOpen ? "flex" : "hidden"}`}
           aria-label={t("mobile")}
         >
           <NavLinks onNavigate={() => setMenuOpen(false)} />

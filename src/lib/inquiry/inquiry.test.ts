@@ -12,7 +12,7 @@ const VALID = {
   country: "Switzerland",
   counterpartyType: "refinery",
   service: "doreSourcing",
-  scope: "",
+  scope: "trial",
   message: "We would like to discuss sourcing.",
   consent: "on",
 };
@@ -41,6 +41,22 @@ describe("parseInquiry", () => {
         consent: "consent",
       },
     });
+  });
+
+  it("requires a volume tier for Doré Gold Sourcing only", () => {
+    expect(parseInquiry({ ...VALID, scope: "" })).toEqual({ ok: false, fieldErrors: { scope: "required" } });
+    expect(parseInquiry({ ...VALID, scope: "standard" }).ok).toBe(true);
+    expect(parseInquiry({ ...VALID, service: "permitJv", scope: "" }).ok).toBe(true);
+    expect(parseInquiry({ ...VALID, service: "unsure" }).ok).toBe(true);
+  });
+
+  it("rejects a volume that is not one of the tiers", () => {
+    expect(parseInquiry({ ...VALID, scope: "1 tonne" })).toEqual({ ok: false, fieldErrors: { scope: "invalid" } });
+  });
+
+  it("reports a missing volume together with other errors", () => {
+    const result = parseInquiry({ ...VALID, scope: "", fullName: "" });
+    expect(result).toEqual({ ok: false, fieldErrors: { fullName: "required", scope: "required" } });
   });
 
   it("treats missing required fields as required, not as a type error", () => {
@@ -72,6 +88,7 @@ describe("deliverInquiry", () => {
     expect(body.reply_to).toBe("a.buyer@example.com");
     expect(body.subject).toBe("New inquiry: Line Break Co (refinery)");
     expect(body.text).toContain("Language: fr");
+    expect(body.text).toContain("Indicative volume: 5 kg – 10 kg (Trial Allocation)");
   });
 
   it("throws when the provider rejects the email", async () => {

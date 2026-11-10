@@ -4,7 +4,13 @@ import { useActionState, useEffect, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { submitInquiry } from "@/app/[locale]/inquiry/actions";
 import { Link } from "@/i18n/navigation";
-import { COUNTERPARTY_TYPES, SERVICES, type InquiryField, type InquiryState } from "@/lib/inquiry/schema";
+import {
+  COUNTERPARTY_TYPES,
+  SERVICES,
+  VOLUME_TIERS,
+  type InquiryField,
+  type InquiryState,
+} from "@/lib/inquiry/schema";
 import { INQUIRIES_EMAIL } from "@/lib/site";
 
 const INITIAL_STATE: InquiryState = { status: "idle" };
@@ -12,13 +18,13 @@ const INITIAL_STATE: InquiryState = { status: "idle" };
 function Field({
   name,
   label,
-  optionalLabel,
+  note,
   error,
   children,
 }: {
   name: InquiryField;
   label: string;
-  optionalLabel?: string;
+  note?: string;
   error?: string;
   children: React.ReactNode;
 }) {
@@ -26,7 +32,7 @@ function Field({
     <div className="min-w-0">
       <label htmlFor={name} className="block text-[14px] font-medium text-navy mb-1.5">
         {label}
-        {optionalLabel && <span className="font-normal text-slate"> ({optionalLabel})</span>}
+        {note && <span className="font-normal text-slate"> ({note})</span>}
       </label>
       {children}
       {error && (
@@ -115,7 +121,7 @@ function Form({ onReset }: { onReset: () => void }) {
         <Field name="organization" label={t("organization")} error={errorFor("organization")}>
           <input className="field" type="text" autoComplete="organization" required {...fieldProps("organization")} />
         </Field>
-        <Field name="role" label={t("role")} optionalLabel={t("optional")} error={errorFor("role")}>
+        <Field name="role" label={t("role")} note={t("optional")} error={errorFor("role")}>
           <input className="field" type="text" autoComplete="organization-title" {...fieldProps("role")} />
         </Field>
         <Field name="country" label={t("country")} error={errorFor("country")}>
@@ -124,7 +130,7 @@ function Form({ onReset }: { onReset: () => void }) {
         <Field name="email" label={t("email")} error={errorFor("email")}>
           <input className="field" type="email" autoComplete="email" required {...fieldProps("email")} />
         </Field>
-        <Field name="phone" label={t("phone")} optionalLabel={t("optional")} error={errorFor("phone")}>
+        <Field name="phone" label={t("phone")} note={t("optional")} error={errorFor("phone")}>
           <input className="field" type="tel" autoComplete="tel" {...fieldProps("phone")} />
         </Field>
         <Field name="counterpartyType" label={t("counterpartyType")} error={errorFor("counterpartyType")}>
@@ -145,8 +151,18 @@ function Form({ onReset }: { onReset: () => void }) {
         </Field>
       </div>
 
-      <Field name="scope" label={t("scope")} optionalLabel={t("optional")} error={errorFor("scope")}>
-        <input className="field" type="text" {...fieldProps("scope")} />
+      <Field
+        name="scope"
+        label={t("scope")}
+        note={t("scopeHint", { service: t("services.doreSourcing") })}
+        error={errorFor("scope")}
+      >
+        <select className="field" key={value("scope")} {...fieldProps("scope")}>
+          <option value="">{t("select")}</option>
+          {VOLUME_TIERS.map((tier) => (
+            <option key={tier} value={tier}>{t(`volumes.${tier}`)}</option>
+          ))}
+        </select>
       </Field>
 
       <Field name="message" label={t("message")} error={errorFor("message")}>
